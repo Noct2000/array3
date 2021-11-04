@@ -2,7 +2,9 @@ from TK_1 import tk_1
 from TK_2 import tk_2
 from TK_3 import tk_3
 from TK_4 import tk_4
-from TK-5 import tk_5
+import importlib
+
+tk_5 = importlib.import_module("TK-5").tk_5
 
 input_list = tk_1(4)
 print("input numbers:", input_list)
